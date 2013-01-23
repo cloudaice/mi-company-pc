@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/xiangchao/code/mix/pyplatform/lib/API'
-let g:netrw_dirhist_2='/home/xiangchao/code/mix/pyplatform/wwwroot/views'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/xiangchao/code/fileproxy'
+let g:netrw_dirhist_2='/home/xiangchao/.vim/bundle/indent-motion'
+let g:netrw_dirhist_3='/home/xiangchao/weibo'
+let g:netrw_dirhist_4='/home/xiangchao/weibo/.git'
+let g:netrw_dirhist_5='/home/xiangchao/myblogs/cloudaice-blog/_posts'

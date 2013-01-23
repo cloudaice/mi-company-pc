@@ -82,3 +82,15 @@
 [submodule "bundle/zencoding-vim"]
 	path = bundle/zencoding-vim
 	url = http://github.com/mattn/zencoding-vim.git
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
+[submodule "bundle/matrix"]
+	path = bundle/matrix
+	url = git@github.com:uguu-org/vim-matrix-screensaver.git
+[submodule "bundle/git-vim"]
+	path = bundle/git-vim
+	url = git@github.com:motemen/git-vim.git
+[submodule "bundle/gitvim"]
+	path = bundle/gitvim
+	url = git@github.com:motemen/git-vim.git

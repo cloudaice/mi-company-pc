@@ -16,12 +16,12 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " General Settings
-
 set nocompatible	" not compatible with the old-fashion vi mode
 set bs=2		" allow backspacing over everything in insert mode
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
+set nu
 
 
 filetype on           " Enable filetype detection
@@ -159,7 +159,9 @@ map <S-L> gt
 " new tab
 map <C-t><C-t> :tabnew<CR>
 " close tab
-map <C-t><C-w> :tabclose<CR> 
+map <C-t><C-w> :tabclose<CR>
+" next tab
+map <C-l><C-l> :tabnext<CR>
 
 " ,/ turn off search highlighting
 nmap <leader>/ :nohl<CR>
@@ -287,7 +289,8 @@ let g:tex_flavor='latex'
 " --- AutoClose - Inserts matching bracket, paren, brace or quote 
 " fixed the arrow key problems caused by AutoClose
 if !has("gui_running")	
-   set term=linux
+   "set term = linux 这么设置不会清屏
+   set term=xterm
    imap OA <ESC>ki
    imap OB <ESC>ji
    imap OC <ESC>li
@@ -328,3 +331,10 @@ let g:tagbar_autofocus = 1
 
 " --- SnipMate
 let g:snipMateAllowMatchingDot = 0
+
+
+"--------------------------------------------------------------------------- 
+" pyflakes
+"--------------------------------------------------------------------------- 
+"let g:pyflakes_use_quickfix = 0
+let g:flake8_ignore='E501,W404'
